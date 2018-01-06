@@ -21,4 +21,4 @@ for i in data.columns:
 		if (data[i].isnull())[j]:
 			data[i][j] = ployinterp_column(data[i],j)
 
-print(data)
+data.to_excel(outputfile,header=None,index=False)
